@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Blank Page</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+            color: inherit;
+            font-size: inherit;
+            font-family: inherit;
+            line-height: inherit;
+        }
+        body {
+            font-family: sans-serif;
+            box-sizing: border-box;
+            background-color: hsl(0, 0%, 90%);
+        }
+        canvas {
+            display: block;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 1px rgba(0,0,0,.2),    /* border */
+                        0 0 3px rgba(0,0,0,.15),   /* outer shadow */
+                        0 1px 2px rgba(0,0,0,.15); /* cast shadow */
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+<body>
+
+
+<canvas id="canvas" width="400" height="300"></canvas>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src=""></script>
+
+<script>
+    
+	var context	= document.getElementById("canvas").getContext("2d");
+    
+    var width  = 400;
+    var height = 300;
+    
+    context.canvas.width  = width;
+    context.canvas.height = height;
+    
+    function setup() {
+        
+        
+        
+    }
+    
+    function draw() {
+        
+        context.clear();
+        
+        
+        
+        
+        requestAnimationFrame(draw);
+    }
+    
+    setup();
+    draw();
+    
+</script>
+
+</body>
+</html>
