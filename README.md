@@ -8,7 +8,7 @@ For more information, you can check this [question](https://superuser.com/questi
 
 ## Screenshot
 
-![screenshot of the submenu](http://image-url-here)
+![screenshot of the submenu](https://raw.githubusercontent.com/akinuri/custom-context-submenu/master/screenshot-of-submenu.jpg)
 
 ## Installation
 
