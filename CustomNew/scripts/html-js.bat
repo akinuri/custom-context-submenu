@@ -2,7 +2,7 @@
 
 setlocal enabledelayedexpansion
 
-set "template=js"
+set "template=html-js"
 set "extension=html"
 set "def=New HTML Document (JS)"
 

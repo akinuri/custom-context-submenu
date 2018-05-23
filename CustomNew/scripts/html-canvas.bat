@@ -2,7 +2,7 @@
 
 setlocal enabledelayedexpansion
 
-set "template=canvas"
+set "template=html-canvas"
 set "extension=html"
 set "def=New HTML Document (Canvas)"
 
