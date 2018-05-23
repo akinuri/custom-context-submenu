@@ -1,5 +1,21 @@
 @echo off
 
-copy C:\Windows\CustomNew\templates\php.php "%cd%"
+setlocal enabledelayedexpansion
 
-rename php.php "New PHP File.php"
+set "template=php"
+set "extension=php"
+set "def=New PHP File"
+
+set "name=%def%.%extension%"
+set count=1
+
+copy C:\Windows\CustomNew\templates\%template%.%extension% "%cd%"
+
+:loop
+if not exist "%name%" goto :continue
+set /a count+=1
+set "name=%def% (%count%).%extension%"
+goto :loop
+
+:continue
+rename "%template%.%extension%" "%name%"

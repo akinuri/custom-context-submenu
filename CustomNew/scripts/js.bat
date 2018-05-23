@@ -1,5 +1,21 @@
 @echo off
 
-copy C:\Windows\CustomNew\templates\js.js "%cd%"
+setlocal enabledelayedexpansion
 
-rename js.js "New JavaScript File.js"
+set "template=js"
+set "extension=js"
+set "def=New JavaScript File"
+
+set "name=%def%.%extension%"
+set count=1
+
+copy C:\Windows\CustomNew\templates\%template%.%extension% "%cd%"
+
+:loop
+if not exist "%name%" goto :continue
+set /a count+=1
+set "name=%def% (%count%).%extension%"
+goto :loop
+
+:continue
+rename "%template%.%extension%" "%name%"

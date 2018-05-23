@@ -2,9 +2,9 @@
 
 setlocal enabledelayedexpansion
 
-set "template=reg"
-set "extension=reg"
-set "def=New Registry Entries"
+set "template=js"
+set "extension=html"
+set "def=New HTML Document (JS)"
 
 set "name=%def%.%extension%"
 set count=1
