@@ -12,4 +12,19 @@ For more information, you can check this [question](https://superuser.com/questi
 
 ## Installation
 
-You need to copy `CustomNew` folder to your `Windows` directory (e.g. `C:\Windows`). Then run `install.reg` that's inside the CustomNew folder. If you're familiar with Registry Keys and Batch files, you can modify the submenu to meet your needs.
+You need to copy `CustomNew` folder to your `Windows` directory (e.g. `C:\Windows`). Then run `install.reg` that's inside the CustomNew folder.
+
+If you're familiar with Registry Keys and Batch files, you can modify the submenu to meet your needs.
+
+
+### Custom Installation Path
+
+Since the file paths are (need to be) hardcoded in `install.reg`, it's a little troublesome to use a different installation path. One would need to replace all `C:\\Windows\\CustomNew` with the desired path.
+
+I'm thinking of creating a script that will do that. Some time.
+
+## Notes
+
+* If you are using 32-bit applications on 64-bit OS, you will need to modify the `install.reg` and replace `Program Files` with `Program Files (x86)`. This applies to
+  * Notepad++ (app and icon)
+  * HTML menu items (chrome icons)
