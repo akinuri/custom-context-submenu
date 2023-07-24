@@ -9,7 +9,7 @@ set "def=New HTML Document (JS)"
 set "name=%def%.%extension%"
 set count=1
 
-copy C:\Windows\CustomNew\templates\%template%.%extension% "%cd%"
+copy %~dp0\..\templates\%template%.%extension% "%cd%"
 
 :loop
 if not exist "%name%" goto :continue
