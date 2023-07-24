@@ -1,5 +1,7 @@
 Windows Registry Editor Version 5.00
 
+; TODO: determine the path dynamically; this shouldn't be tied to some static path
+
 [HKEY_CLASSES_ROOT\Directory\Background\shell\Coding]
 "Icon"="C:\\Windows\\CustomNew\\icons\\coding.ico"
 "MUIVerb"="Coding"
